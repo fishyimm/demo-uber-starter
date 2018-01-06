@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.application.demouber.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="208dp"
+        android:layout_height="134dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uberlogo"/>
+
+    <Switch
+        android:id="@+id/userTypeSwitch"
+        android:layout_width="44dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="37dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/rider"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginLeft="122dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="38dp"
+        android:layout_height="15dp"
+        android:text="@string/driver"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintLeft_toRightOf="@+id/userTypeSwitch"
+        android:layout_marginLeft="14dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="134dp"
+        android:layout_marginTop="24dp"
+        android:onClick="getStarted"
+        android:text="@string/getStarted"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeSwitch"/>
+</android.support.constraint.ConstraintLayout>
